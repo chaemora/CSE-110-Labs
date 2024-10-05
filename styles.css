@@ -1,8 +1,14 @@
+body {
+    margin: 0;
+}
 .div-1 {
-    background-color: rgb(245, 240, 230);
-    width: 100%;
+    width: auto;
     display:inline-block;
-    scroll-margin-top: 146px;
+    scroll-margin-top: 166px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(245, 240, 230);
+    max-width: 100%;
 }
 
 .div-1 p {
@@ -12,9 +18,12 @@
 .div-2 {
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
     color: white;
-    width: 100%;
+    width: auto;
     display: inline-block;
-    scroll-margin-top: 146px;
+    scroll-margin-top: 166px;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 100%;
 }
 
 .div-2 p {
@@ -23,9 +32,15 @@
 
 .div-3 {
     background-color: rgb(245, 240, 230);
-    width: 100%;
+    width: auto;
     display: inline-block;
-    scroll-margin-top: 146px;
+    scroll-margin-top: 166px;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 100%;
+}
+.div-3 h2 {
+    margin-bottom: 0%;
 }
 
 .wrapper {
@@ -39,42 +54,56 @@
     grid-column: 1;
     grid-auto-rows: auto;
     overflow: scroll;
+    scrollbar-width: none;
     background-color: #182b49;
     color: white;
     font-size: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .two {
     grid-column: 2;
     grid-auto-rows: auto;
     overflow: scroll;
+    scrollbar-width: none;
     background-color: #182b49;
     color: white;
     font-size: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .three {
     grid-column: 3;
     grid-auto-rows: auto;
     overflow: scroll;
+    scrollbar-width: none;
     background-color: #182b49;
     color: white;
     font-size: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .four {
     grid-column: 4;
     grid-auto-rows: auto;
     overflow: scroll;
+    scrollbar-width: none;
     background-color: #182b49;
     color: white;
     font-size: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -102,3 +131,42 @@ li a:hover {
     color: white;
     background-color: #182b49;
 }
+
+@media screen and (max-width: 800px) {
+    ul li a {
+        display: none;
+    }
+    ul li img {
+        max-width: 75%;
+    }
+    .div-1 p {
+        font-size: 20px;
+    }
+    .div-2 p {
+        font-size: 20px;
+    }
+    .one {
+        font-size: 20px;
+        margin-bottom: 0%;
+    }
+    .two {
+        font-size: 20px;
+        margin-bottom: 0%;
+    }
+    .three {
+        font-size: 20px;
+        grid-column: 1;
+        margin-top: 0%;
+    }
+    .four {
+        font-size: 20px;
+        grid-column: 2;
+        margin-top: 0%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .wrapper {
+        grid-auto-columns: repeat(2, 1fr);
+    }
+  }
